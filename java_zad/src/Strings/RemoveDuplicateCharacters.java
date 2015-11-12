@@ -72,9 +72,11 @@ public class RemoveDuplicateCharacters {
 		 String s5 = "bba r sss";
 		 String exp5 = "ba rs";
 		 
-		 check(exp2, removeDuplicates2(s2));
+		 check(exp1, removeDuplicates2(s1));
 		 check(exp2, removeDuplicates(s2));
-		 
+		 check(exp3, removeDuplicates(s3));
+		 check(exp4, removeDuplicates(s4));
+		 check(exp5, removeDuplicates(s5));
 	 }
 		 
 		 
@@ -85,6 +87,8 @@ public class RemoveDuplicateCharacters {
 		 }
 		 else {
 			 System.out.println("nije ok");
+			 System.out.println("expected: " + expected);
+			 System.out.println("actual: " + actual);
 		 }
 	 }
 	 
